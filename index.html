@@ -25,7 +25,7 @@
               <use href="./images/icons.svg#icon-logo" />
             </svg>
           </a>
-          <ul class="list social-links-list">
+          <ul class="list social-links-list social-header">
             <li class="li"><a href="" class="link">Instagram</a></li>
             <li class="li"><a href="" class="link">Youtube</a></li>
           </ul>
@@ -40,20 +40,20 @@
               </a>
               <ul class="list header-nav-list">
                 <li>
-                  <a href="" class="link">About</a>
+                  <a href="#about" class="link">About</a>
                 </li>
                 <li>
-                  <a href="" class="link">Services and prices</a>
+                  <a href="#services" class="link">Services and prices</a>
                 </li>
                 <li>
-                  <a href="" class="link">Barbers</a>
+                  <a href="#barbers" class="link">Barbers</a>
                 </li>
                 <li>
-                  <a href="Contacts" class="link"></a>
+                  <a href="#contacts" class="link">Contacts</a>
                 </li>
               </ul>
             </nav>
-            <div class="header-right">
+            <div class="header-top-right">
               <address class="header-address">
                 <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
               </address>
@@ -73,86 +73,150 @@
             </button>
           </div>
           <div class="header-middle">
-            <p class="title-paragraph">A hair salon for men in Kyiv</p>
-            <h1 class="first-heading">BarberShop</h1>
-            <p class="paragraph header-p">
-              We are experts in trendy men’s haircuts. We work quickly,
-              carefully and with style.
-            </p>
+            <div class="header-left">
+              <p class="title-paragraph">A hair salon for men in Kyiv</p>
+              <h1 class="first-heading">BarberShop</h1>
+              <p class="paragraph header-p">
+                We are experts in trendy men’s haircuts. We work quickly,
+                carefully and with style.
+              </p>
+            </div>
+            <ul class="list header-right">
+              <li class="li"></li>
+              <li class="li"></li>
+              <li class="li"></li>
+            </ul>
           </div>
           <div class="header-bottom">
-            <div class="header-bottom-big-screen">Back Forward</div>
-            <div class="header-bottom-mobile">
-              <ul class="list slider-stripes">
-                <li class="slider-stripe"></li>
-                <li class="slider-stripe"></li>
-                <li class="slider-stripe"></li>
-              </ul>
-            </div>
+            <ul class="list slider-stripes-big">
+              <li class="li">Back</li>
+              <li class="li">Forward</li>
+            </ul>
+            <ul class="list slider-stripes-small">
+              <li class="li"></li>
+              <li class="li"></li>
+              <li class="li"></li>
+            </ul>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container">
-          <div class="about-left">
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
+          <ul class="list about-left">
+            <li>
+              <picture class="about-img">
+                <source
+                  srcset="
+                    ./images/about/about-1.jpg    270w,
+                    ./images/about/about-1@2x.jpg 540w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="370px"
+                />
+                <source
+                  srcset="
+                    ./images/about/about-1-tablet.jpg    330w,
+                    ./images/about/about-1-tablet@2x.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="450px"
+                />
+                <img
+                  src="./images/about/about-1-tablet.jpg"
+                  alt="male barber with short hair, facial hair and wearing a plain shirt doing haircut"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture class="about-img">
+                <source
+                  srcset="
+                    ./images/about/about-2.jpg    270w,
+                    ./images/about/about-2@2x.jpg 540w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="370px"
+                />
+                <source
+                  srcset="
+                    ./images/about/about-2-tablet.jpg    330w,
+                    ./images/about/about-2-tablet@2x.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="450px"
+                />
+                <img
+                  src="./images/about/about-2-tablet.jpg"
+                  alt="male barber with short hair, facial hair and wearing a plain shirt doing haircut"
+                />
+              </picture>
+            </li>
+          </ul>
           <div class="about-right">
-            <p class="title-paragraph">About</p>
-            <h2 class="second-heading">Best Barbershop in your city</h2>
-            <p class="paragraph">
-              If you want to add more confidence to your image, you should visit
-              us
-            </p>
-            <p class="paragraph smaller-p">
-              We are a team that never stops at what has been achieved and are
-              thirsty for changes. And when you fall into the hands of our
-              master, you will never be the same again. We are a team that is
-              always "on the same wave" with clients. Therefore, we are always
-              ready to improve everyone who comes to us!
-            </p>
+            <div>
+              <p class="title-paragraph">About</p>
+              <h2 class="second-heading">Best Barbershop in your city</h2>
+              <p class="paragraph">
+                If you want to add more confidence to your image, you should
+                visit us
+              </p>
+              <p class="paragraph smaller-p">
+                We are a team that never stops at what has been achieved and are
+                thirsty for changes. And when you fall into the hands of our
+                master, you will never be the same again. We are a team that is
+                always "on the same wave" with clients. Therefore, we are always
+                ready to improve everyone who comes to us!
+              </p>
+            </div>
             <button class="orange-button" type="button">online-booking</button>
           </div>
         </div>
       </section>
-      <section class="section services">
+      <section class="section services" id="services">
         <div class="container">
           <p class="title-paragraph">Spend your time with the best masters</p>
           <h2 class="second-heading">Services and prices</h2>
           <div class="prices">
             <div class="prices-row">
               <p class="paragraph">Men’s haircut</p>
+              <div class="price-stripe"></div>
               <p class="paragraph">from 300 uah.</p>
             </div>
             <div class="prices-row">
               <p class="paragraph">Beard trim</p>
+              <div class="price-stripe"></div>
               <p class="paragraph">from 200 uah.</p>
             </div>
             <div class="prices-row">
               <p class="paragraph">Mustache trim</p>
+              <div class="price-stripe"></div>
               <p class="paragraph">from 200 uah.</p>
             </div>
             <div class="prices-row">
               <p class="paragraph">Straight razor shave</p>
+              <div class="price-stripe"></div>
               <p class="paragraph">from 200 uah.</p>
             </div>
             <div class="prices-row">
               <p class="paragraph">Trainee’s haircut</p>
+              <div class="price-stripe"></div>
               <p class="paragraph">from 50 uah.</p>
             </div>
             <div class="prices-row">
               <p class="paragraph">Haircut under the nozzle</p>
+              <div class="price-stripe"></div>
               <p class="paragraph">from 200 uah.</p>
             </div>
             <div class="prices-row">
               <p class="paragraph">Children’s haircut (0-12 y.o.)</p>
+              <div class="price-stripe"></div>
               <p class="paragraph">from 300 uah.</p>
             </div>
             <div class="prices-row">
               <p class="paragraph">Camouflage of grey hair</p>
+              <div class="price-stripe"></div>
               <p class="paragraph">from 200 uah.</p>
             </div>
           </div>
@@ -167,7 +231,7 @@
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.
           </p>
-          <ul class="list opinion-list">
+          <ul class="list opinions-list">
             <li class="opinion-li opinion-left">
               <p class="number">600</p>
               <p class="paragraph">Satisfied customers per day</p>
@@ -187,44 +251,87 @@
           </ul>
         </div>
       </section>
-      <section class="section barbers">
+      <section class="section barbers" id="barbers">
         <div class="container">
           <p class="title-paragraph">For true enjoyers of the atmosphere</p>
           <h2 class="second-heading">Our barbers</h2>
           <ul class="list barbers-list">
             <li class="barbers-li">
-              <img
+              <!--
+              If I want to use a different image for another screen size and another pixel-density screen will this code work?
+              -->
+              <picture class="barber-img">
+                <source
+                  srcset="
+                    ./images/barbers/barber-1.jpg    370w,
+                    ./images/barbers/barber-1@2x.jpg 740w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="370px"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-1-tablet.jpg    450w,
+                    ./images/barbers/barber-1-tablet@2x.jpg 900w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="450px"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-1-mobile.jpg    418w,
+                    ./images/barbers/barber-1-mobile@2x.jpg 836w
+                  "
+                  sizes="418px"
+                />
+                <img
+                  src="./images/barbers/barber-1-mobile.jpg"
+                  alt="male barber with short hair, tattoos, ear tunnel, wearing a shirt and a wristwatch working"
+                />
+              </picture>
+              <!--
+              <img width="370" height="346"
                 class="barber-img"
                 src="./images/barbers/barber-1-mobile.jpg"
+                srcset="
+                  ./images/barbers/barber-1.jpg           370w,
+                  ./images/barbers/barber-1-mobile.jpg    418w,
+                  ./images/barbers/barber-1-tablet.jpg    450w,
+                  ./images/barbers/barber-1@2x.jpg        740w,
+                  ./images/barbers/barber-1-mobile@2x.jpg 836w,
+                  ./images/barbers/barber-1-tablet@2x.jpg 900px
+                "
+                sizes="(min-width: 1170px) 370px, (min-width: 768px) 450px, 418px"
                 alt="male barber with short hair, tattoos, ear tunnel, wearing a shirt and a wristwatch working"
               />
+              -->
               <h3 class="third-heading">John Smith</h3>
               <p class="paragraph barber-p">Extreme Barber</p>
               <ul class="list social-list">
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin" />
                     </svg>
                   </a>
@@ -232,38 +339,62 @@
               </ul>
             </li>
             <li class="barbers-li">
-              <img
-                class="barber-img"
-                src="./images/barbers/barber-2-mobile.jpg"
-                alt="male barber with short hair, facial hair and wearing a plain shirt doing haircut"
-              />
+              <picture class="barber-img">
+                <source
+                  srcset="
+                    ./images/barbers/barber-2.jpg    370w,
+                    ./images/barbers/barber-2@2x.jpg 740w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="370px"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-2-tablet.jpg    450w,
+                    ./images/barbers/barber-2-tablet@2x.jpg 900w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="450px"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-2-mobile.jpg    418w,
+                    ./images/barbers/barber-2-mobile@2x.jpg 836w
+                  "
+                  sizes="418px"
+                />
+                <img
+                  src="./images/barbers/barber-2-mobile.jpg"
+                  alt="male barber with short hair, facial hair and wearing a plain shirt doing haircut"
+                />
+              </picture>
               <h3 class="third-heading">Michele Doe</h3>
               <p class="paragraph barber-p">Extreme Barber</p>
               <ul class="list social-list">
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin" />
                     </svg>
                   </a>
@@ -271,38 +402,62 @@
               </ul>
             </li>
             <li class="barbers-li">
-              <img
-                class="barber-img"
-                src="./images/barbers/barber-3-mobile.jpg"
-                alt="male barber with long beard and moustache, tattoos, wearing a dark t-shirt and a warm cap doing haircut"
-              />
+              <picture class="barber-img">
+                <source
+                  srcset="
+                    ./images/barbers/barber-3.jpg    370w,
+                    ./images/barbers/barber-3@2x.jpg 740w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="370px"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-3-tablet.jpg    450w,
+                    ./images/barbers/barber-3-tablet@2x.jpg 900w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="450px"
+                />
+                <source
+                  srcset="
+                    ./images/barbers/barber-3-mobile.jpg    418w,
+                    ./images/barbers/barber-3-mobile@2x.jpg 836w
+                  "
+                  sizes="418px"
+                />
+                <img
+                  src="./images/barbers/barber-3-mobile.jpg"
+                  alt="male barber with long beard and moustache, tattoos, wearing a dark t-shirt and a warm cap doing haircut"
+                />
+              </picture>
               <h3 class="third-heading">Alan Black</h3>
               <p class="paragraph barber-p">Extreme Barber</p>
               <ul class="list social-list">
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook" />
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="link social-link">
-                    <svg width="20" height="20">
+                  <a class="link social-link" href="">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin" />
                     </svg>
                   </a>
@@ -317,28 +472,128 @@
           <p class="title-paragraph">In Latin, "barba" means "beard"</p>
           <ul class="list">
             <li>
-              <img
-                src="./images/more/more-1-mobile.jpg"
-                alt="a man cutting another man's hair"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/more/more-1.jpg    270w,
+                    ./images/more/more-1@2x.jpg 540w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="
+                    ./images/more/more-1-tablet.jpg    330w,
+                    ./images/more/more-1-tablet@2x.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="330px"
+                />
+                <source
+                  srcset="
+                    ./images/more/more-1-mobile.jpg    418w,
+                    ./images/more/more-1-mobile@2x.jpg 836w
+                  "
+                  sizes="418px"
+                />
+                <img
+                  src="./images/more/more-1-mobile.jpg"
+                  alt="a man cutting another man's hair"
+                />
+              </picture>
             </li>
             <li>
-              <img
-                src="./images/more/more-2-mobile.jpg"
-                alt="a man using shaving foam on another man"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/more/more-2.jpg    270w,
+                    ./images/more/more-2@2x.jpg 540w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="
+                    ./images/more/more-2-tablet.jpg    330w,
+                    ./images/more/more-2-tablet@2x.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="330px"
+                />
+                <source
+                  srcset="
+                    ./images/more/more-2-mobile.jpg    418w,
+                    ./images/more/more-2-mobile@2x.jpg 836w
+                  "
+                  sizes="418px"
+                />
+                <img
+                  src="./images/more/more-2-mobile.jpg"
+                  alt="a man using shaving foam on another man"
+                />
+              </picture>
             </li>
             <li>
-              <img
-                src="./images/more/more-3-mobile.jpg"
-                alt="a man covering another man's face with a towel"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/more/more-3.jpg    270w,
+                    ./images/more/more-3@2x.jpg 540w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="
+                    ./images/more/more-3-tablet.jpg    330w,
+                    ./images/more/more-3-tablet@2x.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="330px"
+                />
+                <source
+                  srcset="
+                    ./images/more/more-3-mobile.jpg    418w,
+                    ./images/more/more-3-mobile@2x.jpg 836w
+                  "
+                  sizes="418px"
+                />
+                <img
+                  src="./images/more/more-3-mobile.jpg"
+                  alt="a man covering another man's face with a towel"
+                />
+              </picture>
             </li>
             <li>
-              <img
-                src="./images/more/more-4-mobile.jpg"
-                alt="a man styling another man's hair"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/more/more-4.jpg    270w,
+                    ./images/more/more-4@2x.jpg 540w
+                  "
+                  media="(min-width: 1170px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="
+                    ./images/more/more-4-tablet.jpg    330w,
+                    ./images/more/more-4-tablet@2x.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="330px"
+                />
+                <source
+                  srcset="
+                    ./images/more/more-4-mobile.jpg    418w,
+                    ./images/more/more-4-mobile@2x.jpg 836w
+                  "
+                  sizes="418px"
+                />
+                <img
+                  src="./images/more/more-4-mobile.jpg"
+                  alt="a man styling another man's hair"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -350,27 +605,29 @@
           <h2 class="second-heading">Online-booking</h2>
           <form class="form" action="">
             <div class="form-div">
-              <div class="form-row">
-                <input
-                  class="input"
-                  id="name"
-                  type="text"
-                  name="name"
-                  required
-                  placeholder=""
-                />
-                <label class="label" for="name">Name*</label>
-              </div>
-              <div class="form-row">
-                <input
-                  class="input"
-                  id="tel"
-                  type="tel"
-                  name="tel"
-                  required
-                  placeholder=""
-                />
-                <label class="label" for="tel">Phone*</label>
+              <div class="form-main">
+                <div class="form-row">
+                  <input
+                    class="input"
+                    id="name"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder=""
+                  />
+                  <label class="label" for="name">Name*</label>
+                </div>
+                <div class="form-row">
+                  <input
+                    class="input"
+                    id="tel"
+                    type="tel"
+                    name="tel"
+                    required
+                    placeholder=""
+                  />
+                  <label class="label" for="tel">Phone*</label>
+                </div>
               </div>
               <div class="form-row">
                 <textarea
@@ -387,7 +644,7 @@
           </form>
         </div>
       </section>
-      <section class="section contacts">
+      <section class="section contacts" id="contacts">
         <div class="container">
           <h2 class="second-heading">Contacts</h2>
           <address class="footer-address">
@@ -449,17 +706,22 @@
       </div>
       <nav class="menu-nav">
         <ul class="list">
-          <li class="li"><a href="" class="link">About</a></li>
-          <li class="li"><a href="" class="link">Services and prices</a></li>
-          <li class="li"><a href="" class="link">Barbers</a></li>
-          <li class="li"><a href="" class="link">Contacts</a></li>
+          <li class="li"><a href="#about" class="link">About</a></li>
+          <li class="li">
+            <a href="#services" class="link">Services and prices</a>
+          </li>
+          <li class="li"><a href="#barbers" class="link">Barbers</a></li>
+          <li class="li"><a href="#contacts" class="link">Contacts</a></li>
         </ul>
       </nav>
       <address class="menu-address">
         <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
       </address>
       <button class="orange-button" type="button">online-booking</button>
-      Instagram Youtube
+      <ul class="list social-links-list social-menu">
+        <li class="li"><a href="" class="link">Instagram</a></li>
+        <li class="li"><a href="" class="link">Youtube</a></li>
+      </ul>
     </div>
     <div class="backdrop"></div>
     <script
