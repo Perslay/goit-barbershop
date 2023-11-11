@@ -117,7 +117,7 @@
                     ./images/about/about-1.jpg    270w,
                     ./images/about/about-1@2x.jpg 540w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="270px"
                 />
                 <source
@@ -141,7 +141,7 @@
                     ./images/about/about-2.jpg    270w,
                     ./images/about/about-2@2x.jpg 540w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="270px"
                 />
                 <source
@@ -234,12 +234,14 @@
       </section>
       <section class="section opinions">
         <div class="container">
-          <p class="title-paragraph">Old traditional school</p>
-          <h2 class="second-heading">Why people come to us?</h2>
-          <p class="paragraph opinions-p">
-            Only good things are said about us. But it's better to see and feel
-            1 time than read 10 times.
-          </p>
+          <div>
+            <p class="title-paragraph">Old traditional school</p>
+            <h2 class="second-heading">Why people come to us?</h2>
+            <p class="paragraph opinions-p">
+              Only good things are said about us. But it's better to see and feel
+              1 time than read 10 times.
+            </p>
+          </div>
           <ul class="list opinions-list">
             <li class="opinion-li opinion-left">
               <p class="number">600</p>
@@ -275,7 +277,7 @@
                     ./images/barbers/barber-1.jpg    370w,
                     ./images/barbers/barber-1@2x.jpg 740w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="370px"
                 />
                 <source
@@ -354,7 +356,7 @@
                     ./images/barbers/barber-2.jpg    370w,
                     ./images/barbers/barber-2@2x.jpg 740w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="370px"
                 />
                 <source
@@ -417,7 +419,7 @@
                     ./images/barbers/barber-3.jpg    370w,
                     ./images/barbers/barber-3@2x.jpg 740w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="370px"
                 />
                 <source
@@ -487,7 +489,7 @@
                     ./images/more/more-1.jpg    270w,
                     ./images/more/more-1@2x.jpg 540w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="270px"
                 />
                 <source
@@ -518,7 +520,7 @@
                     ./images/more/more-2.jpg    270w,
                     ./images/more/more-2@2x.jpg 540w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="270px"
                 />
                 <source
@@ -549,7 +551,7 @@
                     ./images/more/more-3.jpg    270w,
                     ./images/more/more-3@2x.jpg 540w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="270px"
                 />
                 <source
@@ -580,7 +582,7 @@
                     ./images/more/more-4.jpg    270w,
                     ./images/more/more-4@2x.jpg 540w
                   "
-                  media="(min-width: 1170px)"
+                  media="(min-width: 1248px)"
                   sizes="270px"
                 />
                 <source
@@ -609,91 +611,93 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="section booking">
-        <div class="container">
-          <h2 class="second-heading">Online-booking</h2>
-          <form class="form" action="">
-            <div class="form-div">
-              <div class="form-main">
-                <div class="form-row">
-                  <input
-                    class="input"
-                    id="name"
-                    type="text"
-                    name="name"
-                    required
-                    placeholder=""
-                  />
-                  <label class="label" for="name">Name*</label>
+      <section class="footer-top">
+        <section class="section booking">
+          <div class="container">
+            <h2 class="second-heading">Online-booking</h2>
+            <form class="form" action="">
+              <div class="form-div">
+                <div class="form-main">
+                  <div class="form-row">
+                    <input
+                      class="input"
+                      id="name"
+                      type="text"
+                      name="name"
+                      required
+                      placeholder=""
+                    />
+                    <label class="label" for="name">Name*</label>
+                  </div>
+                  <div class="form-row">
+                    <input
+                      class="input"
+                      id="tel"
+                      type="tel"
+                      name="tel"
+                      required
+                      placeholder=""
+                    />
+                    <label class="label" for="tel">Phone*</label>
+                  </div>
                 </div>
                 <div class="form-row">
-                  <input
+                  <textarea
                     class="input"
-                    id="tel"
-                    type="tel"
-                    name="tel"
-                    required
+                    name="message"
+                    id="message"
+                    rows="4"
                     placeholder=""
-                  />
-                  <label class="label" for="tel">Phone*</label>
+                  ></textarea>
+                  <label class="label" for="message">Message</label>
                 </div>
               </div>
-              <div class="form-row">
-                <textarea
-                  class="input"
-                  name="message"
-                  id="message"
-                  rows="4"
-                  placeholder=""
-                ></textarea>
-                <label class="label" for="message">Message</label>
+              <button class="orange-button" type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+        <section class="section contacts" id="contacts">
+          <div class="container">
+            <h2 class="second-heading">Contacts</h2>
+            <address class="footer-address">
+              <div class="contacts-main">
+                <ul class="list contacts-list">
+                  <li class="contacts-li">
+                    <svg class="contacts-svg" width="24" height="24">
+                      <use href="./images/icons.svg#icon-map-pin" />
+                    </svg>
+                    <a
+                      href="https://www.google.pl/maps/place/Velyka+Vasylkivska+St,+67%2F7,+Kyiv,+Ukraina,+02000/@50.4292651,30.5138505,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf1da4f1134b:0xd499687226671317!8m2!3d50.4292617!4d30.5164254!16s%2Fg%2F11c2gq6trb?entry=ttu"
+                      class="link"
+                      >st. Vasylkivska, 7A Kiev, 08132</a
+                    >
+                  </li>
+                  <li class="contacts-li">
+                    <svg class="contacts-svg" width="24" height="24">
+                      <use href="./images/icons.svg#icon-phone" />
+                    </svg>
+                    <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
+                  </li>
+                  <li class="contacts-li">
+                    <svg class="contacts-svg" width="24" height="24">
+                      <use href="./images/icons.svg#icon-mail" />
+                    </svg>
+                    <a href="mailto:barbershop@email.com" class="link"
+                      >barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
               </div>
-            </div>
-            <button class="orange-button" type="submit">Send</button>
-          </form>
-        </div>
-      </section>
-      <section class="section contacts" id="contacts">
-        <div class="container">
-          <h2 class="second-heading">Contacts</h2>
-          <address class="footer-address">
-            <div class="contacts-main">
-              <ul class="list contacts-list">
-                <li class="contacts-li">
-                  <svg class="contacts-svg" width="24" height="24">
-                    <use href="./images/icons.svg#icon-map-pin" />
-                  </svg>
-                  <a
-                    href="https://www.google.pl/maps/place/Velyka+Vasylkivska+St,+67%2F7,+Kyiv,+Ukraina,+02000/@50.4292651,30.5138505,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf1da4f1134b:0xd499687226671317!8m2!3d50.4292617!4d30.5164254!16s%2Fg%2F11c2gq6trb?entry=ttu"
-                    class="link"
-                    >st. Vasylkivska, 7A Kiev, 08132</a
-                  >
-                </li>
-                <li class="contacts-li">
-                  <svg class="contacts-svg" width="24" height="24">
-                    <use href="./images/icons.svg#icon-phone" />
-                  </svg>
-                  <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
-                </li>
-                <li class="contacts-li">
-                  <svg class="contacts-svg" width="24" height="24">
-                    <use href="./images/icons.svg#icon-mail" />
-                  </svg>
-                  <a href="mailto:barbershop@email.com" class="link"
-                    >barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="contacts-time">
-              <p class="title-paragraph">Working hours</p>
-              <p class="paragraph contacts-p">
-                Every day from <time datetime="9:00">9:00</time> to
-                <time datetime="22:00">22:00</time>
-              </p>
-            </div>
-          </address>
-        </div>
+              <div class="contacts-time">
+                <p class="title-paragraph">Working hours</p>
+                <p class="paragraph contacts-p">
+                  Every day from <time datetime="9:00">9:00</time> to
+                  <time datetime="22:00">22:00</time>
+                </p>
+              </div>
+            </address>
+          </div>
+        </section>
       </section>
       <section class="section footer-social">
         <div class="container">

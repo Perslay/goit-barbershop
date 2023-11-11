@@ -1,4 +1,5 @@
 :root {
+  --color-darkbg: #111319;
   --color-darkblue: #191c26;
   --color-darkblue-transparent: #191C2633;
   --color-black: #303030;
@@ -228,6 +229,8 @@ address {
   width: 40px;
 }
 
+/* main */
+
 /* about */
 
 .about-left {
@@ -251,7 +254,7 @@ address {
 /* services */
 
 .services {
-  background-color: #111319;
+  background-color: var(--color-darkbg);
   background-image: url("../images/bgs/bg-1-mobile.png");
   background-size: cover;
 }
@@ -391,11 +394,13 @@ address {
   gap: 30px;
 }
 
-/* booking */
+/* footer */
 
-.booking {
+.footer-top {
   background-color: var(--color-darkblue);
 }
+
+/* booking */
 
 .booking .second-heading {
   margin-bottom: 45px;
@@ -461,11 +466,7 @@ address {
   color: var(--color-white);
   outline: none;
 }
-/*
-.form-row:last-child {
-  margin-bottom: 40px;
-}
-*/
+
 .form-row:last-child .label {
   top: 0;
 }
@@ -479,7 +480,6 @@ address {
 /* contacts */
 
 .contacts {
-  background-color: #191C26;
   background-image: url("../images/bgs/bg-2-mobile.png");
   background-size: cover;
 }
@@ -853,6 +853,8 @@ address {
     display: none;
   }
 
+  /* main */
+
   /* about */
 
   .about .container {
@@ -942,6 +944,8 @@ address {
     max-width: 450px;
   }
 
+  /* footer */
+
   /* booking */
 
   .form-div {
@@ -1001,7 +1005,7 @@ address {
   }
 }
 
-@media all and (min-width: 1170px) {
+@media screen and (min-width: 1248px) {
 
   .container {
     max-width: 1248px;
@@ -1074,6 +1078,8 @@ address {
     margin-bottom: 144px;
   }
 
+  /* main */
+
   /* about */
 
   .about-left {
@@ -1110,6 +1116,76 @@ address {
     background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
     max-width: 570px;
     padding: 30px 20px;
+  }
+
+  /* opinions */
+
+  .opinions .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 130px;
+  }
+
+  .opinions-list {
+    margin-left: 100px;
+  }
+
+  /* barbers */
+
+  .barbers .container {
+    max-width: 1248px;
+  }
+
+  .barbers-list {
+    gap: 30px;
+  }
+
+  /* more */
+
+  /* footer */
+
+  .footer-top {
+    background-color: var(--color-darkbg);
+    display: flex;
+  }
+
+  /* booking */
+
+  .booking {
+    width: 815px;
+  }
+
+  .booking .container {
+    margin: 0 30px 0 auto;
+    padding-right: 0;
+    width: 570px;
+  }
+
+  /* contacts */
+
+  .contacts {
+    width: 785px;
+  }
+
+  .contacts .container {
+    margin: 0 auto 0 100px;
+    padding: 0;
+  }
+
+  .footer-address {
+    flex-wrap: wrap;
+    gap: 72px;
+    max-width: 249px;
+  }
+
+  .contacts-time .title-paragraph {
+    color: var(--color-grayblue-transparent);
+  }
+
+  /* footer-social */
+
+  .footer-social {
+    padding: 52px 0;
   }
 
   @media (min-device-pixel-ratio: 2),
